@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Spline+Sans:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Manrope:wght@200..800&family=Spline+Sans:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+
+<body>
+    <section>
+        <nav class="navbar navbar-expand-lg m-60 mt-44">
+            <div class="container-fluid">
+                <a class="navbar-brand text-white" href="./first_stage.html"
+                    style="font-size: 50px; font-weight: bold;">lenc)</a>
+            </div>
+        </nav>
+    </section>
+
+    <section>
+        <div class="container-sm m-60 px-auto">
+            <div class="row">
+                <div class="col">
+                    <div class="font-p_list">
+                        <h2 class="font-2">Начнем)</h2>
+                    </div>
+                </div>
+                <div class="col">
+                    <div>
+                        <div class="row">
+                            <h3 class="font-p_list pb-4">Авторизация)</h3>
+                            <form>
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="email" id="form2Example1" class="form-control"
+                                        placeholder="Введите вашу почту">
+                                </div>
+        
+                                <div data-mdb-input-init class="form-outline mb-4">
+                                    <input type="password" id="form2Example2" class="form-control bg-black-50 border-0"
+                                        placeholder="А теперь вспомните пароль">
+                                </div>
+        
+                                <div data-mdb-input-init class="d-flex mb-3 mb-lg-4">
+                                    <button type="button" data-mdb-button-init data-mdb-ripple-init
+                                        class="btn btn-block mb-4 bg-white"
+                                        onclick="showAlertAndRedirect()" style="border-radius: 60px; height: 60px; width: 100%; font-size: 18px;">Войти</button>
+                                </div>
+        
+                            </form>
+                        </div>
+                        <hr style="margin-bottom: 20px;">
+        
+                        <div class="row">
+                            <h3 class="font-p_list pb-4">Регистация)</h3>
+                            <form>
+                                <div class="d-flex flex-row mb-4">
+                                    <i class="fas fa-user fa-lg fa-fw"></i>
+                                    <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                                        <input type="text" id="form3Example1c" class="form-control"
+                                            placeholder="Как вас зовут?">
+                                    </div>
+                                </div>
+        
+                                <div class="d-flex flex-row mb-4">
+                                    <i class="fas fa-envelope fa-lg fa-fw"></i>
+                                    <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                                        <input type="email" id="form3Example3c" class="form-control" placeholder="Почта">
+                                    </div>
+                                </div>
+        
+                                <div class="d-flex flex-row mb-4">
+                                    <i class="fas fa-lock fa-lg fa-fw"></i>
+                                    <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                                        <input type="password" id="form3Example4c" class="form-control"
+                                            placeholder="Придумайте пароль">
+                                    </div>
+                                </div>
+        
+                                <div class="d-flex flex-row mb-4">
+                                    <i class="fas fa-key fa-lg fa-fw"></i>
+                                    <div data-mdb-input-init class="form-outline flex-fill mb-0">
+                                        <input type="password" id="form3Example4cd" class="form-control"
+                                            placeholder="Повторите придуманный пароль">
+                                    </div>
+                                </div>
+        
+                                <div class="form-check d-flex mb-5">
+                                    <input class="form-check-input me-2" type="checkbox" value="" id="form2Example3c">
+                                    <label class="form-check-label" for="form2Example3">
+                                        Я согласен со всеми утверждениями в <a href="#">Условиями обслуживания</a>
+                                    </label>
+                                </div>
+        
+                                <div class="d-flex mb-3 mb-lg-4">
+                                    <button type="submit" data-mdb-button-init data-mdb-ripple-init
+                                        class="btn btn-block mb-4 bg-white" style="border-radius: 60px; height: 60px; width: 100%; font-size: 18px;">Регистрация</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="customAlert"
+            style="display: none; position: fixed; top: 20px; right: 20px; background-color: #B2FBA5; color: black; padding: 15px; border-radius: 5px; z-index: 1000; width: 200px;">
+            Alert
+        </div>
+    </section>
+
+
+
+    <script>
+        function showAlertAndRedirect() {
+            const alertBox = document.getElementById("customAlert");
+            alertBox.style.display = "block";
+            setTimeout(() => {
+                alertBox.style.display = "none";
+                window.location.href = './first_stage.html';
+            }, 1500);
+        }
+    </script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+</body>
+
+</html>
