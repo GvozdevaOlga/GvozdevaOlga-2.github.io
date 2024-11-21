@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+body {
+    font-family: 'Monrope', sans-serif;
+    color: white;
+}
+
+ul.no-bullets li::before {
+    content: '✓  ';
+}
+
+.m-60 {
+    margin: 0 3.75rem;
+}
+
+.mt-44 {
+    padding: 2.75rem 0 !important;
+}
+
+.font-1 {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.font-2 {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 80px;
+}
+
+.font-p {
+    font-size: 32px;
+
+}
+
+.font-p_list {
+    font-size: 26px;
+}
+
+.font-p_list hr {
+    margin: 80px 0;
+}
+
+
+.style-item-list {
+    border-radius: 40px;
+    border: 1px solid white;
+    width: fit-content;
+    padding: 8px 18px;
+    margin-bottom: 20px;
+}
+
+ul.no-bullets {
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.p-81 {
+    padding-right: 81px;
+}
+
+@media screen and (max-width: 1024px) {
+    .p-81 {
+        padding-right: 40.5px;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .font-p {
+        font-size: 25px;
+    }
+
+    .font-1 {
+        font-size: 50px;
+    }
+
+    .p-81 {
+        padding-bottom: 20px;
+    }
+
+    .btn-padding {
+        padding-top: 20px;
+    }
+
+    .font-2_text {
+        font-size: 30px !important;
+    }
+
+    .font-1_text {
+        font-size: 40px !important;
+    }
+
+    .font-4_text {
+        font-size: 20px !important;
+    }
+
+}
+
+@media screen and (max-width: 376px) {
+
+    .m-60 {
+        margin: 0 0.75rem;
+    }
+
+    .font-p_list .row {
+        display: block;
+    }
+}
+
+
+

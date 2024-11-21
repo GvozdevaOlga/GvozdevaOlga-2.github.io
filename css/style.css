@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+::-webkit-scrollbar {
+    width: 0;
+  }
+
+body {
+    font-family: 'Monrope', sans-serif;
+    color: white;
+    background-color: black !important;
+
+}
+
+body a {
+    color: white;
+}
+
+ul.no-bullets li::before {
+    content: '✓  ';
+}
+
+.m-60 {
+    margin: 0 3.75rem;
+}
+
+.mt-44 {
+    padding: 2.75rem 0 !important;
+}
+
+.font-1 {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 70px;
+}
+
+.font-2 {
+    font-family: "Ubuntu";
+    font-weight: bold;
+    font-size: 60px;
+    margin-bottom: 80px;
+}
+
+.font-p {
+    font-size: 32px;
+
+}
+
+.font-p_list {
+    font-size: 26px;
+}
+
+.font-p_list hr {
+    margin: 80px 0;
+}
+
+
+.style-item-list {
+    border-radius: 40px;
+    border: 1px solid white;
+    width: fit-content;
+    padding: 8px 18px;
+    margin-bottom: 20px;
+}
+
+ul.no-bullets {
+    padding-left: 0;
+    margin-top: 50px;
+}
+
+.p-81 {
+    padding-right: 81px;
+}
+
+.container_link ul .nav-item {
+    font-size: 36px;
+}
+
+.container_link ul .nav-item .active {
+    color: black;
+    background: #fff;
+    width: 300px;
+}
+
+.container_link ul .nav-item .nav-link:not(.active) {
+    color: white;
+    width: 300px;
+    text-align: left;
+}
+
+.tab-pane .container h3 {
+    font-size: 36px;
+}
+
+.tab-pane .container p {
+    font-size: 20px;
+}
+
+.carousel-inner {
+    padding: 3.75rem;
+}
+
+
+.carousel-control-next,
+.carousel-control-prev {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: none;
+    width: 40px !important;
+    height: 40px !important;
+    top: 50% !important;
+}
+
+.cards-wrapper .card {
+    border: none;
+    border-radius: 0;
+    background: none;
+    color: #fff !important;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+}
+
+input {
+    height: 60px;
+    background-color: rgba(33, 33, 33, 1) !important;
+    border-radius: 60px !important;
+    border: 0 !important;
+    color: #fff !important;
+}
+
+
+.form-control::placeholder {
+    color: rgba(255, 255, 255, 0.5) !important;
+    opacity: 1;
+}
+
+@media screen and (max-width: 1024px) {
+    .p-81 {
+        padding-right: 40.5px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .font-p {
+        font-size: 25px;
+    }
+
+    .font-1 {
+        font-size: 50px;
+    }
+
+    .p-81 {
+        padding-bottom: 20px;
+    }
+
+    .btn-padding {
+        padding-top: 20px;
+    }
+
+    #cases .container-sm .row {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    #cases .container-sm .row .col-4 {
+        display: block;
+        width: 100%;
+    }
+
+    #cases .container-sm .row .col-5 {
+        display: block;
+        width: 100%;
+    }
+
+    #cases .container-sm .row .col-3 {
+        display: block;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 376px) {
+
+    .m-60 {
+        margin: 0 0.75rem;
+    }
+
+    .font-p_list .row {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 769px) {
+    .cards-wrapper .card:not(:first-child) {
+        display: none;
+    }
+
+    .image-wrapper {
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .cards-wrapper {
+        display: flex;
+    }
+
+    .cards-wrapper .card {
+        margin: 0 .5rem;
+        width: calc(100%/3);
+    }
+
+    .image-wrapper {
+        height: 22vw;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+}
